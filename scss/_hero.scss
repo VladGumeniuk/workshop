@@ -1,0 +1,67 @@
+.hero {
+  &__content {
+    @include adaptiv-value("padding-top", 150, 50);
+    padding-bottom: 220px;
+  }
+
+  &__title {
+    position: relative;
+    max-width: 542px;
+    font-weight: 800;
+    @include adaptiv-value("font-size", 82, 48);
+    @include adaptiv-value("margin-bottom", 36, 15);
+    font-size: 82px;
+    line-height: 95%;
+    text-transform: uppercase;
+    color: #f0f0f0;
+    animation: hero 1s linear;
+    span {
+      color: $colorYellow;
+    }
+  }
+
+  &__text {
+    position: relative;
+    @include adaptiv-value("margin-bottom", 46, 20);
+    max-width: 500px;
+    @include adaptiv-value("font-size", 24, 16);
+    line-height: 1.2;
+    color: #a8a8a8;
+    animation: hero 1.3s linear;
+  }
+
+  &__link {
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 200px;
+    padding: 20px 0;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #1c1c1c;
+    background: $colorYellow;
+    transition: all 0.5s ease;
+    animation: hero 1.6s linear;
+    &:hover {
+      background-color: #ffc800af;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    animation: opa 1s linear;
+  }
+
+  &__image-photo {
+    max-width: 100%;
+    height: auto;
+    @media (max-width: 1500px) {
+      @include adaptiv-value("width", 900, 320);
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.services {
+  padding-top: 260px;
+  padding-bottom: 220px;
+
+  &__list {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(334px, 1fr));
+    gap: 45px;
+  }
+
+  &__item {
+    padding: 33px 68px 0;
+    text-align: center;
+  }
+
+  &__item-title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+
+    text-transform: uppercase;
+    color: #f0f0f0;
+  }
+
+  &__item-text {
+    margin-bottom: 35px;
+    font-family: "Montserrat Alternates";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #f0f0f0;
+  }
+
+  &__item-btn {
+    display: block;
+    margin-bottom: 45px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: $colorYellow;
+  }
+
+  &__item-icon {
+    display: flex;
+    justify-content: center;
+    img {
+      max-width: 100%;
+    }
+  }
+}

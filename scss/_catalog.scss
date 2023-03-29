@@ -1,0 +1,33 @@
+.catalog {
+  padding-bottom: 186px;
+
+  &__list {
+    margin-top: 159px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(347px, 1fr));
+    gap: 29px;
+    li {
+      text-align: center;
+    }
+  }
+
+  &__list-img {
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+
+  &__list-name {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #ffffff;
+  }
+
+  &__list-text {
+    font-family: "Montserrat Alternates";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #ffc700;
+  }
+}

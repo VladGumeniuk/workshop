@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__top">
+            <div class="header__top-search">
+              <form
+                data-da=".header__body,768,first"
+                class="search__form"
+                action="#"
+              >
+                <button type="submit" class="search__icon">
+                  <img src="../images/icons/search.svg" alt="" />
+                </button>
+                <input class="search__input" type="text" placeholder="поиск" />
+              </form>
+            </div>
+            <a href="../index.html" class="header__logo">
+              <img src="../images/logo.png" alt="" />
+            </a>
+            <ul class="header__top-list">
+              <li class="header__top-list">
+                <a class="header__top-link" href="#"
+                  ><img src="../images/icons/case.svg" alt=""
+                /></a>
+              </li>
+              <li class="header__top-list">
+                <a class="header__top-link" href="#"
+                  ><img src="../images/icons/like.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__body">
+            <div class="header__burger">
+              <span></span>
+            </div>
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li><a class="header__link" href="#">Категория</a></li>
+                <li><a class="header__link" href="#">Категория</a></li>
+                <li><a class="header__link" href="#">Категория</a></li>
+                <li><a class="header__link" href="#">Категория</a></li>
+                <li><a class="header__link" href="#">Категория</a></li>
+                <li><a class="header__link" href="#">Категория</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="case">
+          <div class="container">
+            <h2 class="case__title">Корзина</h2>
+            <div class="case__cards">
+              <ul class="case__cards-list">
+                <li class="case__cards-item">
+                  <img
+                    class="case__cards-img"
+                    src="../images/case01.png"
+                    alt=""
+                  />
+                </li>
+                <li class="case__cards-item">
+                  <div class="case__cards-name">Желтое худи</div>
+                  <div class="case__cards-text">худи, одежда</div>
+                </li>
+                </li>
+                <li class="case__cards-item select__case">
+                  <div class="select__case-item">XL</div>
+                  <div class="select__case-item">Белый</div>
+                  <div class="select__case-item">90</div>
+                </li>
+                <li class="case__cards-item">
+                  <div class="case__cards-price">1199.00 грн</div>
+                </li>
+                <li class="case__cards-item">
+                  <button class="case__cards-delete" type="submit">X</button>
+                </li>
+              </ul>
+            </div>
+            <div class="case__cards">
+              <ul class="case__cards-list">
+                <li class="case__cards-item">
+                  <img
+                    class="case__cards-img"
+                    src="../images/case01.png"
+                    alt=""
+                  />
+                </li>
+                <li class="case__cards-item">
+                  <div class="case__cards-name">Желтое худи</div>
+                  <div class="case__cards-text">худи, одежда</div>
+                </li>
+                <li class="case__cards-item select__case">
+                  <div class="select__case-item">XL</div>
+                  <div class="select__case-item">Белый</div>
+                  <div class="select__case-item">90</div>
+                </li>
+                <li class="case__cards-item">
+                  <div class="case__cards-price">1199.00 грн</div>
+                </li>
+                <li class="case__cards-item">
+                  <button class="case__cards-delete" type="submit">X</button>
+                </li>
+              </ul>
+            </div>
+            <h2 class="case__title">Оформить заказ</h2>
+            <form action="#" class="case__form">
+              <div class="case__form-left">
+                <input type="text" class="case__form-input" placeholder="Ваше имя">
+                <input type="text" class="case__form-input" placeholder="Email">
+                <input type="text" class="case__form-input" placeholder="Телефон">
+                <input type="text" class="case__form-input" placeholder="Город">
+                <input type="text" class="case__form-input" placeholder="Отделение">
+              </div>
+              <div class="case__form-right">
+                <div class="case__form-inner">
+                  <div class="case__form-box">
+                    <div class="box__form-title">Доставка</div>
+                    <div class="box__form-options">
+                      <div class="box__form-item">
+                        <input class="box__form-radio" checked type="radio" name="delivery" value="deliveryMag" id="deliveryMag">
+                        <label class="box__form-label" for="deliveryMag">Самовывоз</label>
+                      </div>
+                      <div class="box__form-item">
+                        <input class="box__form-radio" type="radio" name="delivery" value="deliveryPost" id="deliveryPost">
+                        <label class="box__form-label" for="deliveryPost">Новая почта</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="case__form-box">
+                    <div class="box__form-title">Оплата</div>
+                    <div class="box__form-options">
+                      <div class="box__form-item">
+                        <input class="box__form-radio" checked type="radio" name="payment" value="payment" id="payment">
+                        <label class="box__form-label" for="payment">Наложеный платёж</label>
+                      </div>
+                      <div class="box__form-item">
+                        <input class="box__form-radio" type="radio" name="payment" value="paymentNot" id="paymentNot">
+                        <label class="box__form-label" for="paymentNot">Безналичный</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="case__form-sum">Заказ: <span>1100 грн</span></div>
+                <div class="case__form-delivery">Доставка: <span>50 грн</span></div>
+                <div class="case__form-price">Итого: <span>1150 грн</span></div>
+                <button class="case__form-btn">Оформить заказ</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__body">
+            <div class="footer__social">
+              <a href="#" class="footer__logo">
+                <img src="../images/logo.png" alt="" />
+              </a>
+              <ul class="social-item">
+                <li>
+                  <a class="social-link" href="#">
+                    <img src="../images/icons/telegram.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a class="social-link" href="#">
+                    <img src="../images/icons/instagram.svg" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-title">Информация</li>
+              <li><a class="footer__menu-link" href="#">Каталог</a></li>
+              <li><a class="footer__menu-link" href="#">О нас</a></li>
+              <li>
+                <a class="footer__menu-link" href="#">Доставка и оплата</a>
+              </li>
+              <li><a class="footer__menu-link" href="#">Возвращение</a></li>
+            </ul>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-title">Контакты</li>
+              <li><a class="footer__menu-link" href="#">Каталог</a></li>
+              <li><a class="footer__menu-link" href="#">О нас</a></li>
+              <li>
+                <a class="footer__menu-link" href="#">Доставка и оплата</a>
+              </li>
+              <li><a class="footer__menu-link" href="#">Возвращение</a></li>
+            </ul>
+            <div class="footer__send">
+              <div class="footer__send-title">Узнавай о новинках первым</div>
+              <div class="footer__send-subtitle">
+                Получай от нас смс с сюрпризами
+              </div>
+              <form class="footer__form" action="#">
+                <input
+                  class="footer__form-input"
+                  type="text"
+                  placeholder="Email"
+                />
+                <button class="footer__form-btn" type="submit">
+                  Отправить
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.js"></script>
+    <script src="../js/dynamic_adapt.js"></script>
+    <script src="../js/burger.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
