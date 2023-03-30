@@ -68,16 +68,13 @@
             <div class="case__cards">
               <ul class="case__cards-list">
                 <li class="case__cards-item">
-                  <img
-                    class="case__cards-img"
-                    src="../images/case01.png"
-                    alt=""
-                  />
+                  <div class="case__cards-img">
+                    <img src="../images/case01.png" alt="" />
+                  </div>
                 </li>
                 <li class="case__cards-item">
                   <div class="case__cards-name">Желтое худи</div>
                   <div class="case__cards-text">худи, одежда</div>
-                </li>
                 </li>
                 <li class="case__cards-item select__case">
                   <div class="select__case-item">XL</div>
@@ -95,11 +92,9 @@
             <div class="case__cards">
               <ul class="case__cards-list">
                 <li class="case__cards-item">
-                  <img
-                    class="case__cards-img"
-                    src="../images/case01.png"
-                    alt=""
-                  />
+                  <div class="case__cards-img">
+                    <img src="../images/case01.png" alt="" />
+                  </div>
                 </li>
                 <li class="case__cards-item">
                   <div class="case__cards-name">Желтое худи</div>
@@ -121,11 +116,31 @@
             <h2 class="case__title">Оформить заказ</h2>
             <form action="#" class="case__form">
               <div class="case__form-left">
-                <input type="text" class="case__form-input" placeholder="Ваше имя">
-                <input type="text" class="case__form-input" placeholder="Email">
-                <input type="text" class="case__form-input" placeholder="Телефон">
-                <input type="text" class="case__form-input" placeholder="Город">
-                <input type="text" class="case__form-input" placeholder="Отделение">
+                <input
+                  type="text"
+                  class="case__form-input"
+                  placeholder="Ваше имя"
+                />
+                <input
+                  type="text"
+                  class="case__form-input"
+                  placeholder="Email"
+                />
+                <input
+                  type="text"
+                  class="case__form-input"
+                  placeholder="Телефон"
+                />
+                <input
+                  type="text"
+                  class="case__form-input"
+                  placeholder="Город"
+                />
+                <input
+                  type="text"
+                  class="case__form-input"
+                  placeholder="Отделение"
+                />
               </div>
               <div class="case__form-right">
                 <div class="case__form-inner">
@@ -133,12 +148,29 @@
                     <div class="box__form-title">Доставка</div>
                     <div class="box__form-options">
                       <div class="box__form-item">
-                        <input class="box__form-radio" checked type="radio" name="delivery" value="deliveryMag" id="deliveryMag">
-                        <label class="box__form-label" for="deliveryMag">Самовывоз</label>
+                        <input
+                          class="box__form-radio"
+                          checked
+                          type="radio"
+                          name="delivery"
+                          value="deliveryMag"
+                          id="deliveryMag"
+                        />
+                        <label class="box__form-label" for="deliveryMag"
+                          >Самовывоз</label
+                        >
                       </div>
                       <div class="box__form-item">
-                        <input class="box__form-radio" type="radio" name="delivery" value="deliveryPost" id="deliveryPost">
-                        <label class="box__form-label" for="deliveryPost">Новая почта</label>
+                        <input
+                          class="box__form-radio"
+                          type="radio"
+                          name="delivery"
+                          value="deliveryPost"
+                          id="deliveryPost"
+                        />
+                        <label class="box__form-label" for="deliveryPost"
+                          >Новая почта</label
+                        >
                       </div>
                     </div>
                   </div>
@@ -146,18 +178,37 @@
                     <div class="box__form-title">Оплата</div>
                     <div class="box__form-options">
                       <div class="box__form-item">
-                        <input class="box__form-radio" checked type="radio" name="payment" value="payment" id="payment">
-                        <label class="box__form-label" for="payment">Наложеный платёж</label>
+                        <input
+                          class="box__form-radio"
+                          checked
+                          type="radio"
+                          name="payment"
+                          value="payment"
+                          id="payment"
+                        />
+                        <label class="box__form-label" for="payment"
+                          >Наложеный платёж</label
+                        >
                       </div>
                       <div class="box__form-item">
-                        <input class="box__form-radio" type="radio" name="payment" value="paymentNot" id="paymentNot">
-                        <label class="box__form-label" for="paymentNot">Безналичный</label>
+                        <input
+                          class="box__form-radio"
+                          type="radio"
+                          name="payment"
+                          value="paymentNot"
+                          id="paymentNot"
+                        />
+                        <label class="box__form-label" for="paymentNot"
+                          >Безналичный</label
+                        >
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="case__form-sum">Заказ: <span>1100 грн</span></div>
-                <div class="case__form-delivery">Доставка: <span>50 грн</span></div>
+                <div class="case__form-delivery">
+                  Доставка: <span>50 грн</span>
+                </div>
                 <div class="case__form-price">Итого: <span>1150 грн</span></div>
                 <button class="case__form-btn">Оформить заказ</button>
               </div>
