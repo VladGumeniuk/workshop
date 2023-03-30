@@ -1,20 +1,25 @@
 .topprice {
-  padding-bottom: 220px;
-
+  @include adaptiv-value("padding-bottom", 220, 70);
   &__navigation {
-    margin-top: 95px;
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 85px;
+    padding-bottom: 7px;
+    @include adaptiv-value("margin-top", 95, 35);
+    @include adaptiv-value("margin-bottom", 85, 35);
+    @media (max-width: 768px) {
+      overflow-x: scroll;
+    }
   }
 
   &__navigation-btn {
     padding: 8px 22px;
-    font-size: 24px;
+    @include adaptiv-value("font-size", 24, 16);
     line-height: 29px;
     text-align: center;
     background-color: transparent;
     color: #ffffff;
+    @media (max-width: 768px) {
+      padding: 4px 14px;
+    }
   }
 
   &__navigation-btn:active,
@@ -27,20 +32,27 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 25px;
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__list-item {
     text-align: center;
+    align-self: flex-end;
   }
 
   &__list-img {
     margin-bottom: 18px;
+    max-width: 100%;
+    min-height: 150px;
+    object-fit: cover;
   }
 
   &__list-name {
     margin-bottom: 5px;
     font-weight: 300;
-    font-size: 20px;
+    @include adaptiv-value("font-size", 20, 16);
     line-height: 1.2;
     color: #ffffff;
   }

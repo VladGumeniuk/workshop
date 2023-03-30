@@ -1,13 +1,18 @@
 .catalog {
-  padding-bottom: 186px;
+  @include adaptiv-value("padding-bottom", 186, 70);
 
   &__list {
-    margin-top: 159px;
+    @include adaptiv-value("margin-top", 159, 50);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(347px, 1fr));
     gap: 29px;
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
     li {
       text-align: center;
+      align-self: flex-end;
     }
   }
 
@@ -18,7 +23,7 @@
 
   &__list-name {
     font-weight: 700;
-    font-size: 32px;
+    @include adaptiv-value("font-size", 32, 20);
     line-height: 1.2;
     color: #ffffff;
   }

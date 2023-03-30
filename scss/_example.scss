@@ -1,5 +1,5 @@
 .example {
-  padding-bottom: 150px;
+  @include adaptiv-value("padding-bottom", 150, 50);
   &__fon {
     padding-bottom: 160px;
     position: relative;

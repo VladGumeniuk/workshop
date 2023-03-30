@@ -1,7 +1,8 @@
 .reviews {
-  padding-bottom: 200px;
+  @include adaptiv-value("padding-bottom", 200, 70);
   &__fon {
-    margin: 155px 0;
+    @include adaptiv-value("margin-top", 155, 45);
+    @include adaptiv-value("margin-bottom", 155, 45);
     position: relative;
   }
   &__inner {

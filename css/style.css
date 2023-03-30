@@ -121,7 +121,7 @@ body {
 @media (max-width: 1140px) {
   .title {
     font-size: calc(
-      40px + 32 *
+      32px + 40 *
         ((100vw - 320px) / 820)
     );
   }
@@ -505,8 +505,24 @@ body {
 }
 
 .services {
-  padding-top: 260px;
+  padding-top: 220px;
   padding-bottom: 220px;
+}
+@media (max-width: 1140px) {
+  .services {
+    padding-top: calc(
+      70px + 150 *
+        ((100vw - 320px) / 820)
+    );
+  }
+}
+@media (max-width: 1140px) {
+  .services {
+    padding-bottom: calc(
+      70px + 150 *
+        ((100vw - 320px) / 820)
+    );
+  }
 }
 .services__list {
   margin-top: 80px;
@@ -514,9 +530,28 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(334px, 1fr));
   gap: 45px;
 }
+@media (max-width: 1140px) {
+  .services__list {
+    margin-top: calc(
+      20px + 60 *
+        ((100vw - 320px) / 820)
+    );
+  }
+}
+@media (max-width: 768px) {
+  .services__list {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+  }
+}
 .services__item {
   padding: 33px 68px 0;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .services__item {
+    padding: 0 0 0;
+  }
 }
 .services__item-title {
   margin-bottom: 15px;
@@ -526,6 +561,14 @@ body {
   text-transform: uppercase;
   color: #f0f0f0;
 }
+@media (max-width: 1140px) {
+  .services__item-title {
+    font-size: calc(
+      18px + 6 *
+        ((100vw - 320px) / 820)
+    );
+  }
+}
 .services__item-text {
   margin-bottom: 35px;
   font-family: "Montserrat Alternates";
@@ -534,6 +577,14 @@ body {
   line-height: 1.2;
   color: #f0f0f0;
 }
+@media (max-width: 1140px) {
+  .services__item-text {
+    margin-bottom: calc(
+      15px + 20 *
+        ((100vw - 320px) / 820)
+    );
+  }
+}
 .services__item-btn {
   display: block;
   margin-bottom: 45px;
@@ -541,6 +592,14 @@ body {
   font-size: 16px;
   line-height: 1.2;
   color: #ffc700;
+}
+@media (max-width: 1140px) {
+  .services__item-btn {
+    margin-bottom: calc(
+      20px + 25 *
+        ((100vw - 320px) / 820)
+    );
+  }
 }
 .services__item-icon {
   display: flex;
@@ -552,6 +611,14 @@ body {
 
 .example {
   padding-bottom: 150px;
+}
+@media (max-width: 1140px) {
+  .example {
+    padding-bottom: calc(
+      50px + 100 *
+        ((100vw - 320px) / 820)
+    );
+  }
 }
 .example__fon {
   padding-bottom: 160px;
@@ -680,11 +747,40 @@ body {
 .topprice {
   padding-bottom: 220px;
 }
+@media (max-width: 1140px) {
+  .topprice {
+    padding-bottom: calc(
+      70px + 150 *
+        ((100vw - 320px) / 820)
+    );
+  }
+}
 .topprice__navigation {
-  margin-top: 95px;
   display: flex;
-  flex-wrap: wrap;
+  padding-bottom: 7px;
+  margin-top: 95px;
   margin-bottom: 85px;
+}
+@media (max-width: 1140px) {
+  .topprice__navigation {
+    margin-top: calc(
+      35px + 60 *
+        ((100vw - 320px) / 820)
+    );
+  }
+}
+@media (max-width: 1140px) {
+  .topprice__navigation {
+    margin-bottom: calc(
+      35px + 50 *
+        ((100vw - 320px) / 820)
+    );
+  }
+}
+@media (max-width: 768px) {
+  .topprice__navigation {
+    overflow-x: scroll;
+  }
 }
 .topprice__navigation-btn {
   padding: 8px 22px;
@@ -693,6 +789,19 @@ body {
   text-align: center;
   background-color: transparent;
   color: #ffffff;
+}
+@media (max-width: 1140px) {
+  .topprice__navigation-btn {
+    font-size: calc(
+      16px + 8 *
+        ((100vw - 320px) / 820)
+    );
+  }
+}
+@media (max-width: 768px) {
+  .topprice__navigation-btn {
+    padding: 4px 14px;
+  }
 }
 .topprice__navigation-btn:active, .topprice__navigation-btn:focus {
   color: #070707;
@@ -703,11 +812,21 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 25px;
 }
+@media (max-width: 768px) {
+  .topprice__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .topprice__list-item {
   text-align: center;
+  align-self: flex-end;
 }
 .topprice__list-img {
   margin-bottom: 18px;
+  max-width: 100%;
+  min-height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .topprice__list-name {
   margin-bottom: 5px;
@@ -715,6 +834,14 @@ body {
   font-size: 20px;
   line-height: 1.2;
   color: #ffffff;
+}
+@media (max-width: 1140px) {
+  .topprice__list-name {
+    font-size: calc(
+      16px + 4 *
+        ((100vw - 320px) / 820)
+    );
+  }
 }
 .topprice__list-sum {
   font-weight: 700;
@@ -726,14 +853,37 @@ body {
 .catalog {
   padding-bottom: 186px;
 }
+@media (max-width: 1140px) {
+  .catalog {
+    padding-bottom: calc(
+      70px + 116 *
+        ((100vw - 320px) / 820)
+    );
+  }
+}
 .catalog__list {
   margin-top: 159px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(347px, 1fr));
   gap: 29px;
 }
+@media (max-width: 1140px) {
+  .catalog__list {
+    margin-top: calc(
+      50px + 109 *
+        ((100vw - 320px) / 820)
+    );
+  }
+}
+@media (max-width: 768px) {
+  .catalog__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
 .catalog__list li {
   text-align: center;
+  align-self: flex-end;
 }
 .catalog__list-img {
   margin-bottom: 20px;
@@ -744,6 +894,14 @@ body {
   font-size: 32px;
   line-height: 1.2;
   color: #ffffff;
+}
+@media (max-width: 1140px) {
+  .catalog__list-name {
+    font-size: calc(
+      20px + 12 *
+        ((100vw - 320px) / 820)
+    );
+  }
 }
 .catalog__list-text {
   font-family: "Montserrat Alternates";
@@ -756,9 +914,34 @@ body {
 .reviews {
   padding-bottom: 200px;
 }
+@media (max-width: 1140px) {
+  .reviews {
+    padding-bottom: calc(
+      70px + 130 *
+        ((100vw - 320px) / 820)
+    );
+  }
+}
 .reviews__fon {
-  margin: 155px 0;
+  margin-top: 155px;
+  margin-bottom: 155px;
   position: relative;
+}
+@media (max-width: 1140px) {
+  .reviews__fon {
+    margin-top: calc(
+      45px + 110 *
+        ((100vw - 320px) / 820)
+    );
+  }
+}
+@media (max-width: 1140px) {
+  .reviews__fon {
+    margin-bottom: calc(
+      45px + 110 *
+        ((100vw - 320px) / 820)
+    );
+  }
 }
 .reviews__inner {
   max-width: 750px;
@@ -862,6 +1045,14 @@ body {
 .contactus {
   padding-bottom: 150px;
 }
+@media (max-width: 1140px) {
+  .contactus {
+    padding-bottom: calc(
+      70px + 80 *
+        ((100vw - 320px) / 820)
+    );
+  }
+}
 .contactus__inner {
   margin: 200px 0;
   display: grid;
@@ -879,6 +1070,7 @@ body {
 @media (max-width: 768px) {
   .contactus__inner {
     display: block;
+    margin: 70px 0;
   }
 }
 .contactus__form-input {

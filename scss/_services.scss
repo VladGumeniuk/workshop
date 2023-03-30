@@ -1,31 +1,37 @@
 .services {
-  padding-top: 260px;
-  padding-bottom: 220px;
+  @include adaptiv-value("padding-top", 220, 70);
+  @include adaptiv-value("padding-bottom", 220, 70);
 
   &__list {
-    margin-top: 80px;
+    @include adaptiv-value("margin-top", 80, 20);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(334px, 1fr));
     gap: 45px;
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 20px;
+    }
   }
 
   &__item {
     padding: 33px 68px 0;
     text-align: center;
+    @media (max-width: 768px) {
+      padding: 0 0 0;
+    }
   }
 
   &__item-title {
     margin-bottom: 15px;
     font-weight: 700;
-    font-size: 24px;
+    @include adaptiv-value("font-size", 24, 18);
     line-height: 1.2;
-
     text-transform: uppercase;
     color: #f0f0f0;
   }
 
   &__item-text {
-    margin-bottom: 35px;
+    @include adaptiv-value("margin-bottom", 35, 15);
     font-family: "Montserrat Alternates";
     font-weight: 300;
     font-size: 16px;
@@ -35,7 +41,7 @@
 
   &__item-btn {
     display: block;
-    margin-bottom: 45px;
+    @include adaptiv-value("margin-bottom", 45, 20);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
