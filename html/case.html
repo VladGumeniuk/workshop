@@ -3,11 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.css"
-      rel="stylesheet"
-    />
+    <title>Workshop | Корзина</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
 
@@ -76,9 +72,46 @@
                   <div class="case__cards-name">Желтое худи</div>
                   <div class="case__cards-text">худи, одежда</div>
                 </li>
-                <li class="case__cards-item select__case">
-                  <div class="select__case-item">XL</div>
-                  <div class="select__case-item">Белый</div>
+                <li class="case__cards-item select__inner">
+                  <div class="dropdown">
+                    <button type="button" class="dropdown__button">XL</button>
+                    <ul class="dropdown__list">
+                      <li class="dropdown__list-item" data-value="XL">XL</li>
+                      <li class="dropdown__list-item" data-value="XS">XS</li>
+                      <li class="dropdown__list-item" data-value="S">S</li>
+                    </ul>
+                    <input
+                      type="text"
+                      name="select-category"
+                      value=""
+                      class="dropdown__input"
+                    />
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      type="button"
+                      class="dropdown__button button__width"
+                    >
+                      Белый
+                    </button>
+                    <ul class="dropdown__list">
+                      <li class="dropdown__list-item" data-value="white">
+                        Белый
+                      </li>
+                      <li class="dropdown__list-item" data-value="yellow">
+                        Желтый
+                      </li>
+                      <li class="dropdown__list-item" data-value="orange">
+                        Оранжевый
+                      </li>
+                    </ul>
+                    <input
+                      type="text"
+                      name="select-category"
+                      value=""
+                      class="dropdown__input"
+                    />
+                  </div>
                   <div class="select__case-item">90</div>
                 </li>
                 <li class="case__cards-item">
@@ -100,9 +133,46 @@
                   <div class="case__cards-name">Желтое худи</div>
                   <div class="case__cards-text">худи, одежда</div>
                 </li>
-                <li class="case__cards-item select__case">
-                  <div class="select__case-item">XL</div>
-                  <div class="select__case-item">Белый</div>
+                <li class="case__cards-item select__inner">
+                  <div class="dropdown">
+                    <button type="button" class="dropdown__button">XL</button>
+                    <ul class="dropdown__list">
+                      <li class="dropdown__list-item" data-value="XL">XL</li>
+                      <li class="dropdown__list-item" data-value="XS">XS</li>
+                      <li class="dropdown__list-item" data-value="S">S</li>
+                    </ul>
+                    <input
+                      type="text"
+                      name="select-category"
+                      value=""
+                      class="dropdown__input"
+                    />
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      type="button"
+                      class="dropdown__button button__width"
+                    >
+                      Белый
+                    </button>
+                    <ul class="dropdown__list">
+                      <li class="dropdown__list-item" data-value="white">
+                        Белый
+                      </li>
+                      <li class="dropdown__list-item" data-value="yellow">
+                        Желтый
+                      </li>
+                      <li class="dropdown__list-item" data-value="orange">
+                        Оранжевый
+                      </li>
+                    </ul>
+                    <input
+                      type="text"
+                      name="select-category"
+                      value=""
+                      class="dropdown__input"
+                    />
+                  </div>
                   <div class="select__case-item">90</div>
                 </li>
                 <li class="case__cards-item">
@@ -112,6 +182,7 @@
                   <button class="case__cards-delete" type="submit">X</button>
                 </li>
               </ul>
+            </div>
             </div>
             <h2 class="case__title">Оформить заказ</h2>
             <form action="#" class="case__form">
@@ -274,9 +345,9 @@
         </div>
       </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.js"></script>
     <script src="../js/dynamic_adapt.js"></script>
     <script src="../js/burger.js"></script>
+    <script src="../js/select.js"></script>
     <script src="../js/main.js"></script>
   </body>
 </html>

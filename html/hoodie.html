@@ -3,16 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.css"
-      rel="stylesheet"
-    />
+    <title>Workshop | Желтое худи</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body>
     <div class="wrapper">
+      <a href="../html/select.html">adasda</a>
       <header class="header">
         <div class="container">
           <div class="header__top">
@@ -80,7 +77,47 @@
                   <li><img src="../images/icons/star.svg" alt="" /></li>
                 </ul>
                 <div class="product__price">1199.00 грн</div>
-                <div class="product__options"></div>
+                <div class="product__options select__inner">
+                  <div class="dropdown">
+                    <button type="button" class="dropdown__button">XL</button>
+                    <ul class="dropdown__list">
+                      <li class="dropdown__list-item" data-value="XL">XL</li>
+                      <li class="dropdown__list-item" data-value="XS">XS</li>
+                      <li class="dropdown__list-item" data-value="S">S</li>
+                    </ul>
+                    <input
+                      type="text"
+                      name="select-category"
+                      value=""
+                      class="dropdown__input"
+                    />
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      type="button"
+                      class="dropdown__button button__width"
+                    >
+                      Белый
+                    </button>
+                    <ul class="dropdown__list">
+                      <li class="dropdown__list-item" data-value="white">
+                        Белый
+                      </li>
+                      <li class="dropdown__list-item" data-value="yellow">
+                        Желтый
+                      </li>
+                      <li class="dropdown__list-item" data-value="orange">
+                        Оранжевый
+                      </li>
+                    </ul>
+                    <input
+                      type="text"
+                      name="select-category"
+                      value=""
+                      class="dropdown__input"
+                    />
+                  </div>
+                </div>
                 <button class="product__btn" type="button">КУПИТЬ</button>
                 <a href="#" class="product__favority">
                   <img src="../images/icons/favority.svg" alt="" />
@@ -276,9 +313,10 @@
         </div>
       </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9.1.0/swiper-bundle.min.js"></script>
+
     <script src="../js/dynamic_adapt.js"></script>
     <script src="../js/burger.js"></script>
+    <script src="../js/select.js"></script>
     <script src="../js/main.js"></script>
   </body>
 </html>

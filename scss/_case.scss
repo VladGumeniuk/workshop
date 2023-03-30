@@ -73,20 +73,6 @@
     }
   }
 }
-.select {
-  &__case {
-    display: flex;
-    gap: 30px;
-    @media (max-width: 768px) {
-      padding: 15px;
-    }
-  }
-  &__case-item {
-    padding: 5px 15px;
-    background: $colorYellow;
-    color: #000;
-  }
-}
 .case {
   &__form {
     @include adaptiv-value("margin-top", 70, 30);
