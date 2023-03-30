@@ -1874,6 +1874,18 @@ body {
   cursor: pointer;
 }
 
+.dropdown__name {
+  margin-right: 10px;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .dropdown__name {
+    display: none;
+  }
+}
+
 .dropdown__input {
   display: none;
 }
